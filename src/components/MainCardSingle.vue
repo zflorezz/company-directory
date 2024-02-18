@@ -13,7 +13,7 @@ const username = faker.internet.userName({firstName: firstname, lastName:lastnam
 <template>
     <!-- {{ fullname }} <br /> -->
     <RouterLink :to="{name: 'CardDetails', params: {id: username}}">
-        <div class="border border-gray-400 rounded-xl shadow bg-gray-200 h-full">
+        <div class="border border-purple-400 rounded-xl shadow bg-purple-200 h-full">
             <img :src="faker.image.urlLoremFlickr({category: 'bunny'})" class="rounded-t-xl" />
             <div class="p-4">
                 <p class="mb-2 text-2xl font-bold">{{ fullname }}</p>
